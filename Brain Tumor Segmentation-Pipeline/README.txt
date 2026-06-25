@@ -23,19 +23,13 @@ An end-to-end Biomedical Image Processing pipeline developed in MATLAB for autom
 
 * **Preprocessing:** Grayscale conversion and Adaptive Median Filtering (`medfilt2`) for salt-and-pepper noise reduction.
 
-
 * **Tissue Masking:** Head segmentation via global Otsu's thresholding, followed by dynamic bounding-box cropping to define the brain-only region of interest (ROI).
-
 
 * **Adaptive Segmentation:** Multi-level thresholding (`multithresh`) coupled with holistic hole-filling to capture necrotic cores in ring-enhancing lesions.
 
-
 * **Statistical Validation:** Regional component evaluation compared against normal brain tissue parameters (Mean + 1.2 x STD).
 
-
 * **Report Generation:** Structural exporting of volumetric percentages, bounding-box parameters, and spatial overlays into a formatted PDF.
-
-
 
 ---
 
@@ -52,9 +46,10 @@ authorName = 'Reza Shojaei Nasab';
 detectAndReportTumor(imagePath, authorName);
 
 
-
 ## Contact & Research Collaborations
 
 * **Developer:** Reza Shojaei Nasab
 * **Field:** Biomedical Engineering (Bioelectric)
-
+---
+## Results Visualization
+![Tumor Detection Result](output/Tumor_Result.png)
